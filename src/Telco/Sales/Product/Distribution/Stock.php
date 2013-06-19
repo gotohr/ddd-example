@@ -1,14 +1,6 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: ljubo
- * Date: 17.6.13.
- * Time: 18:18
- * To change this template use File | Settings | File Templates.
- */
 
 namespace Telco\Sales\Product\Distribution;
-
 
 use Telco\Sales\Channel\Shop;
 use Telco\Sales\Product\ProductInterface;
