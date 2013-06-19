@@ -4,7 +4,7 @@
 Read something about [DDD](http://en.wikipedia.org/wiki/Domain-driven_design).
 This project is created as presentation for [ZgPHP meetup #22](http://zgphp.org/2013/06/zgphp-meetup-22/).
 
-*Purpose of this code is to illustrate presentation, not to be fully functional ;) *
+**Purpose of this code is to illustrate presentation, not to be fully functional ;) **
 
 ### Installation
 
