@@ -36,14 +36,14 @@ class Sale {
     }
 
     /**
-     * @return ProductInterface
+     * @return ProductInterface[]
      */
     public function getProducts() {
         return $this->products;
     }
 
     /**
-     * @param ProductInterface $products
+     * @param ProductInterface[] $products
      * @return Sale
      */
     public function setProducts($products) {
@@ -75,7 +75,7 @@ class Sale {
 
         foreach($this->getProducts() as $product) {
             try {
-                $this->getTransaction()->acknowledge($product->sell($this->atShop));
+                $this->getTransaction()->acknowledge($product->sellAt($this->atShop));
             } catch (ProductSaleException $psex) {
                 $this->undo();
             }
@@ -97,12 +97,16 @@ class Sale {
     }
 
     public function __toString() {
-        $msg = "Shop %s made sale in process %s with products %s";
+        $msg = array(
+            "Shop [%s] made sale",
+            "in process [%s] with",
+            "transactioned products [%s]"
+        );
         return sprintf(
-            $msg,
+            implode(PHP_EOL, $msg),
             $this->atShop->getValue(),
             $this->inProcess->getValue(),
-            implode(',', $this->getProducts())
+            implode(',', $this->getTransaction()->getItems())
         );
     }
 }

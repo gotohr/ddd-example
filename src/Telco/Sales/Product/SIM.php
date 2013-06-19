@@ -2,6 +2,7 @@
 
 namespace Telco\Sales\Product;
 
+use Telco\Sales\Channel\Shop;
 use Telco\Sales\Product\Distribution\SIMStock;
 use Telco\Sales\Product\Distribution\StockInterface;
 
@@ -18,14 +19,15 @@ class SIM extends Product {
     }
 
     public function getName() {
-        return $this->getSim()->get
+        return $this->getSim()->getValue();
     }
+
     /**
      * @param Shop $shop
      * @return StockInterface
      */
     public function getStock(Shop $shop) {
-        return SIMStock::getInstance();
+        return SIMStock::getInstance($shop);
     }
 
     /**

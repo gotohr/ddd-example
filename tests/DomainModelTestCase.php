@@ -85,7 +85,7 @@ class DomainModelTestCase extends \PHPUnit_Framework_TestCase {
             $sale = $shop->sell($products, $process);
             echo "$sale";
         } catch (SaleException $sex) {
-
+            throw $sex;
         }
 
     }

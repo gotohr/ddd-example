@@ -24,4 +24,10 @@ interface ProductInterface {
      * @return bool
      */
     public function isAvailableAt(Shop $shop);
+
+    /**
+     * @param Shop $shop
+     * @return mixed
+     */
+    public function sellAt(Shop $shop);
 }

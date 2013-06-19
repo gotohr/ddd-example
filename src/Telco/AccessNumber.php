@@ -11,6 +11,9 @@ class AccessNumber {
      */
     private $msisdn;
 
+    /**
+     * @param MSISDN $msisdn
+     */
     public function __construct(MSISDN $msisdn = null) {
 
         $this->msisdn = $msisdn;

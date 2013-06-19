@@ -11,6 +11,9 @@ class Customer {
      */
     protected $oib;
 
+    /**
+     * @param OIB $oib
+     */
     public function __construct(OIB $oib = null) {
         $this->oib = $oib;
     }

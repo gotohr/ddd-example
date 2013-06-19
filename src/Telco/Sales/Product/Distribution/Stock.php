@@ -19,6 +19,6 @@ class Stock implements StockInterface {
 
     public function has(ProductInterface $product)
     {
-        // TODO: Implement has() method.
+        return true;
     }
 }

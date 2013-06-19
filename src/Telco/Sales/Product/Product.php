@@ -41,4 +41,13 @@ class Product implements ProductInterface{
     public function __toString() {
         return get_called_class() . ' ' . $this->getName();
     }
+
+    /**
+     * @param Shop $shop
+     * @return mixed
+     */
+    public function sellAt(Shop $shop)
+    {
+        return $this;
+    }
 }

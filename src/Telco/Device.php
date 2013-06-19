@@ -11,6 +11,9 @@ class Device {
      */
     private $imei;
 
+    /**
+     * @param IMEI $imei
+     */
     public function __construct(IMEI $imei = null) {
 
         $this->imei = $imei;
