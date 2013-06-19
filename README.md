@@ -14,12 +14,7 @@ Just run the `php composer.phar update` command to install it.
 
 You need [PHPUnit](https://github.com/sebastianbergmann/phpunit).
 
-    $ php composer.phar install --dev
-    $ phpunit
-
-## Community
-
-Check out #silex-php on irc.freenode.net.
+    $ phpunit --bootstrap vendor/autoload.php tests/DomainModelTestCase.php
 
 ## License
 
