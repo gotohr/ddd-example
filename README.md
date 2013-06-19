@@ -1,5 +1,5 @@
-Domain Driven Design Example in Telco domain
-============================================
+## Domain Driven Design Example in Telco domain
+
 
 Read something about [DDD](http://en.wikipedia.org/wiki/Domain-driven_design).
 This project is created as presentation for [ZgPHP meetup #22](http://zgphp.org/2013/06/zgphp-meetup-22/).
