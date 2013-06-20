@@ -100,13 +100,14 @@ class Sale {
         $msg = array(
             "Shop [%s] made sale",
             "in process [%s] with",
-            "transactioned products [%s]"
+            "transactioned products:",
+            "[%s]"
         );
         return sprintf(
             implode(PHP_EOL, $msg),
             $this->atShop->getValue(),
             $this->inProcess->getValue(),
-            implode(',', $this->getTransaction()->getItems())
+            implode(','.PHP_EOL, $this->getTransaction()->getItems())
         );
     }
 }
