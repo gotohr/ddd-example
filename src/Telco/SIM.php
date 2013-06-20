@@ -4,6 +4,16 @@ namespace Telco;
 
 use Telco\Type\ICCID;
 
+/**
+ * A subscriber identity module or subscriber identification module (SIM)
+ * is an integrated circuit that securely stores
+ * the international mobile subscriber identity (IMSI)
+ * and the related key used to identify and authenticate subscribers
+ * on mobile telephony devices (such as mobile phones and computers).
+ *
+ * @link http://en.wikipedia.org/wiki/Subscriber_identity_module
+ * @package Telco
+ */
 class SIM {
 
     /**

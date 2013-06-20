@@ -2,6 +2,12 @@
 
 namespace Telco\Type;
 
+/**
+ * Osobni identifikacijski broj
+ *
+ * @link http://www.porezna-uprava.hr/HR_OIB/Stranice/default.aspx
+ * @package Telco\Type
+ */
 class OIB {
 
     /**

@@ -2,6 +2,12 @@
 
 namespace Telco\Type;
 
+/**
+ * ...is a number uniquely identifying a subscription in a GSM or a UMTS mobile network.
+ *
+ * @link http://en.wikipedia.org/wiki/MSISDN
+ * @package Telco\Type
+ */
 class MSISDN {
 
     /**

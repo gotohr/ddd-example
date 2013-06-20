@@ -2,6 +2,14 @@
 
 namespace Telco\Type;
 
+/**
+ * International Mobile Station Equipment Identity
+ *
+ * *#06# - type in your cellphone
+ *
+ * @link http://en.wikipedia.org/wiki/International_Mobile_Station_Equipment_Identity
+ * @package Telco\Type
+ */
 class IMEI {
 
     /**

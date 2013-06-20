@@ -2,7 +2,12 @@
 
 namespace Telco\Type;
 
-
+/**
+ * Each SIM is internationally identified by its integrated circuit card identifier (ICCID)
+ *
+ * @link http://en.wikipedia.org/wiki/Subscriber_identity_module#ICCID
+ * @package Telco\Type
+ */
 class ICCID {
 
     /**

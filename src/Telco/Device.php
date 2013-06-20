@@ -4,6 +4,11 @@ namespace Telco;
 
 use Telco\Type\IMEI;
 
+/**
+ * Technical Device - links IMEI into domain model
+ *
+ * @package Telco
+ */
 class Device {
 
     /**
