@@ -2,6 +2,8 @@
 
 namespace Telco;
 
+use Telco\Rules\Ruler;
+
 class Process {
 
     private $name;
@@ -23,7 +25,21 @@ class Process {
     }
 
     public function getSupportedOffer() {
+        return "VOICE";
+    }
 
+    /**
+     * @param $ruleName
+     * @param callable $arguments
+     * @return Rules\Rule
+     */
+    public function runRule($ruleName, \Closure $arguments) {
+        $ruler = new Ruler($this, array(
+            $ruleName
+        ));
+
+        $rules = $ruler->addCommonArguments($arguments())->execute();
+        return $rules[$ruleName];
     }
 
 }
