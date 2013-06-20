@@ -6,6 +6,8 @@ This project is created as presentation for [ZgPHP meetup #22](http://zgphp.org/
 
 **Purpose of this code is to illustrate presentation, not to be fully functional.**
 
+Link to [presentation](https://docs.google.com/presentation/d/1ikmveYJCMc72-PkXaigZ9O0DtO4r0MxWNR894ISkYXo/pub?start=false&loop=false&delayms=3000)
+
 ### Installation
 
 Git clone this repo and then use [composer](http://getcomposer.org).
