@@ -31,4 +31,8 @@ class Device extends Product {
         return $this->device->getValue();
     }
 
+    public function getOffer() {
+        return "VOICE";
+    }
+
 }

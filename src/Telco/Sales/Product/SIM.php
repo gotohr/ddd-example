@@ -46,4 +46,8 @@ class SIM extends Product {
         $this->sim = $sim;
     }
 
+    public function getOffer() {
+        return "VOICE";
+    }
+
 }
