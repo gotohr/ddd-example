@@ -55,15 +55,14 @@ class DomainModelTestCase extends \PHPUnit_Framework_TestCase {
 
         $customer = new Customer($oib);
 
-        $ruler = new Ruler(new Process(), array(
-            'CustomerIsNotFrauder'
-        ));
-
-        $rules = $ruler->addCommonArguments(array(
-            'customer' => $customer
-        ))->execute();
-
-        $customerIsNotFrauder = $rules['CustomerIsNotFrauder']->getResult();
+        $generic = new Process();
+        $customerIsNotFrauder = $generic->runRule('CustomerIsNotFrauder',
+            function() use($customer) {
+                return array(
+                    'customer' => $customer
+                );
+            }
+        )->getResult();
 
         $this->assertTrue(
             $customerIsNotFrauder,
